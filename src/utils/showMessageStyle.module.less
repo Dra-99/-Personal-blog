@@ -1,0 +1,36 @@
+// css module
+
+@import '../styles/minix.less';
+@import '../styles/var.less';
+
+.message{
+    .self-center(absolute);
+    z-index: 100;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, .5);
+    border-radius: 13px;
+    padding: 13px 30px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 500;
+    transform:translate(-50%, 50%) translateY(15px);
+    opacity: 0;
+    transition: .5s;
+    &-info{
+        background-color: @primary;
+    };
+    &-success{
+        background-color: @success;
+    };
+    &-warn{
+        background-color: @warn;
+    };
+    &-error{
+        background-color: @danger;
+    }
+}
+
+.icon{
+    margin-right: 7px;
+    font-size: 20px;
+}
